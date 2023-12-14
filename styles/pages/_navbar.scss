@@ -1,0 +1,167 @@
+.navbar__section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0.7rem;
+
+    @include media(">=tablet") {
+        padding: 0.8rem 3rem;
+    }
+    .logo__container {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        img {
+            object-fit: cover;
+            width: 3rem;
+            height: 3rem;
+            background-color: $col-white;
+            border-radius: 100%;
+        }
+        p {
+            display: none;
+            @include calculateRem(30);
+            font-weight: bold;
+
+            @include media(">=desktop") {
+                display: block;
+            }
+        }
+
+        span {
+            color: #bdbdbd;
+        }
+    }
+
+    .navbar__container {
+        .hamburger__btn {
+            @include calculateRem(20);
+            cursor: pointer;
+            user-select: none;
+            border: none;
+            background-color: unset;
+            color: $col-white;
+
+            @include media(">=tablet") {
+                display: none;
+            }
+        }
+        .navbar {
+            display: none;
+            margin-left: 2rem;
+            @include media(">=tablet") {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+
+            .list__container {
+                display: flex;
+                gap: 3rem;
+                @include calculateRem(15);
+                font-weight: 500;
+
+                a {
+                    color: #bdbdbd;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+
+    .login__container {
+        display: none;
+        gap: 1rem;
+        align-items: center;
+
+        @include media(">=tablet") {
+            display: flex;
+        }
+
+        .login__btn {
+            background-color: transparent;
+            padding: 5px 8px;
+            @include calculateRem(16);
+            font-weight: 600;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .nav__get-started {
+            border-radius: 1.5rem;
+            width: 7rem;
+            overflow: hidden;
+            border: none;
+
+            &-container {
+                display: flex;
+                white-space: nowrap;
+
+                span {
+                    @include calculateRem(14);
+                    color: $col-white;
+                    display: block;
+                    padding: 0.6rem 0.8rem;
+                }
+            }
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.mobile__navbar__cont {
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: $col-black;
+    z-index: 50;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+
+    h2 {
+        @include calculateRem(32);
+        padding-right: 1rem;
+        position: relative;
+        top: 0.5rem;
+        align-self: self-end;
+    }
+    .mobile__navbar {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        padding: 12px 0 12px 12px;
+
+        a {
+            width: 100%;
+            padding: 6px 0;
+            text-align: start;
+            color: $col-white;
+            @include calculateRem(16);
+        }
+
+        .mobile__login__btn {
+            background-color: transparent;
+            width: fit-content;
+            margin-top: 12px;
+            margin-bottom: 16px;
+            text-align: start;
+            @include calculateRem(16);
+        }
+
+        .mobile__get-started {
+            border: none;
+            padding: 7px 8px;
+            border-radius: 3px;
+            text-align: start;
+            color: $col-white;
+            width: fit-content;
+            @include calculateRem(16);
+        }
+    }
+}
