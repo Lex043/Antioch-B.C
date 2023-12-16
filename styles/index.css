@@ -142,7 +142,6 @@ body {
 
 .homepage {
   background-image: url(../../assets/ABC\ HOME.png);
-  background-repeat: no-repeat;
   background-position: bottom;
   min-height: 100vh;
 }
@@ -170,7 +169,7 @@ body {
 .homepage .hero button {
   font-size: 0.75rem;
   font-weight: bold;
-  border-radius: 20px;
+  border-radius: 24px;
   padding: 14px 14px;
   border: none;
 }
@@ -301,7 +300,7 @@ body {
   font-size: 2rem;
   padding-right: 1rem;
   position: relative;
-  top: 0.5rem;
+  top: 1.2rem;
   align-self: self-end;
 }
 .mobile__navbar__cont .mobile__navbar {
@@ -337,7 +336,6 @@ body {
 
 .about {
   background-image: url(../../assets/ABOUT\ PG\ 1.png);
-  background-repeat: no-repeat;
   background-position: top;
 }
 .about .preloader {
@@ -483,4 +481,222 @@ body {
   object-fit: cover;
   width: 3rem;
   height: 3rem;
+}
+
+.give__page {
+  background-image: url(../../assets/GIVE\ PG\ 1.png);
+  background-position: center;
+  min-height: 100vh;
+  padding: 0.7rem;
+}
+.give__page .preloader {
+  display: none;
+  flex-direction: column;
+  min-height: 65vh;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+@media (min-width: 768px) {
+  .give__page .preloader {
+    width: 80%;
+    margin: 8rem auto 0rem;
+  }
+}
+.give__page .preloader .social__media {
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0.2rem;
+  display: flex;
+  width: fit-content;
+  gap: 0.1rem;
+}
+.give__page .give {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+@media (min-width: 768px) {
+  .give__page .give {
+    width: 80%;
+    margin: 8rem auto 0rem;
+    min-height: 65vh;
+  }
+}
+.give__page .give__text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.give__page .give__text h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .give__page .give__text h1 {
+    font-size: 5rem;
+  }
+}
+.give__page .give__text p {
+  font-weight: bold;
+  text-align: justify;
+  font-size: 1.25rem;
+}
+.give__page .give__text button {
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 14px 14px;
+  border: none;
+}
+.give__page .give__text button:hover {
+  cursor: pointer;
+}
+.give__page .give .social__media {
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 0.2rem;
+  display: flex;
+  width: fit-content;
+  gap: 0.1rem;
+}
+
+.visit {
+  background-image: url(../../assets/unsplash_ZE3nj34iO0M.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+  padding: 0.7rem;
+}
+.visit .plan__visit {
+  width: 80%;
+  margin: 5rem auto 0rem;
+}
+
+.connect__page {
+  background-image: url(../../assets/YOUTH\ 1.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  padding: 0.7rem;
+}
+.connect__page .connect h1 {
+  font-weight: bold;
+  margin-top: 6rem;
+  text-align: center;
+  padding-bottom: 5rem;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .connect__page .connect h1 {
+    font-size: 5rem;
+  }
+}
+
+.service {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 2rem 0rem;
+}
+.service h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .service h1 {
+    font-size: 3.75rem;
+  }
+}
+.service__details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+@media (min-width: 768px) {
+  .service__details {
+    flex-direction: row;
+  }
+}
+.service__details .church1,
+.service__details .church2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.service__details .church1__text,
+.service__details .church2__text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  align-items: center;
+}
+.service__details .church1__text h1,
+.service__details .church2__text h1 {
+  font-size: 1.25rem;
+}
+.service__details .church1__text p,
+.service__details .church2__text p {
+  display: flex;
+  align-items: center;
+  gap: 0.1rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.sermon__page {
+  background-image: url(../../assets/SERMON.png);
+  background-position: center;
+  min-height: 100vh;
+  padding: 0.7rem;
+}
+.sermon__page .preach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 8rem;
+  min-height: 65vh;
+  text-align: center;
+  justify-content: space-between;
+}
+.sermon__page .preach .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+.sermon__page .preach .text__container h1 {
+  font-weight: 600;
+  font-size: 1.875rem;
+}
+@media (min-width: 768px) {
+  .sermon__page .preach .text__container h1 {
+    font-size: 5rem;
+  }
+}
+.sermon__page .preach .text__container p {
+  font-size: 1.5625rem;
+}
+@media (min-width: 768px) {
+  .sermon__page .preach .text__container p {
+    font-size: 1.875rem;
+  }
+}
+.sermon__page .preach .text button {
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 24px;
+  padding: 14px 14px;
+  border: none;
+}
+.sermon__page .preach .text button:hover {
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */

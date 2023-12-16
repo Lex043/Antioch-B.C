@@ -1,0 +1,73 @@
+.connect__page {
+    background-image: url(../../assets/YOUTH\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 0.7rem;
+
+    .connect {
+        h1 {
+            font-weight: bold;
+            margin-top: 6rem;
+            text-align: center;
+            padding-bottom: 5rem;
+            @include calculateRem(30);
+            @include media(">=tablet") {
+                @include calculateRem(80);
+            }
+        }
+    }
+}
+
+.service {
+    background-color: $col-white;
+    color: $col-black;
+    padding: 2rem 0rem;
+
+    h1 {
+        font-weight: bold;
+        text-align: center;
+        @include calculateRem(30);
+        @include media(">=tablet") {
+            @include calculateRem(60);
+        }
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 1rem;
+        @include media(">=tablet") {
+            flex-direction: row;
+        }
+
+        .church1,
+        .church2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+
+            &__text {
+                display: flex;
+                flex-direction: column;
+                gap: 0.3rem;
+                align-items: center;
+
+                h1 {
+                    @include calculateRem(20);
+                }
+
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.1rem;
+                    font-weight: bold;
+                    @include calculateRem(20);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.give__page {
+    background-image: url(../../assets/GIVE\ PG\ 1.png);
+    background-position: center;
+    min-height: 100vh;
+    padding: 0.7rem;
+    // @include media(">=tablet") {
+    //     padding: 0 2rem 1rem;
+    // }
+
+    .preloader {
+        display: none;
+        flex-direction: column;
+        min-height: 65vh;
+        justify-content: space-between;
+        margin-top: 8rem;
+        @include media(">=tablet") {
+            width: 80%;
+            margin: 8rem auto 0rem;
+        }
+
+        .social__media {
+            margin: 0 auto;
+            background-color: $col-white;
+            border-radius: 12px;
+            padding: 0.2rem;
+            display: flex;
+            width: fit-content;
+            gap: 0.1rem;
+        }
+    }
+
+    .give {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        justify-content: space-between;
+        @include media(">=tablet") {
+            width: 80%;
+            margin: 8rem auto 0rem;
+            min-height: 65vh;
+        }
+
+        &__text {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 1rem;
+            margin-bottom: 2rem;
+
+            h1 {
+                font-weight: bold;
+                text-align: center;
+                @include calculateRem(30);
+                @include media(">=tablet") {
+                    @include calculateRem(80);
+                }
+            }
+
+            p {
+                font-weight: bold;
+                text-align: justify;
+                @include calculateRem(20);
+            }
+
+            button {
+                @include calculateRem(12);
+                font-weight: bold;
+                border-radius: 24px;
+                padding: 14px 14px;
+                border: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .social__media {
+            margin: 0 auto;
+            background-color: $col-white;
+            border-radius: 12px;
+            padding: 0.2rem;
+            display: flex;
+            width: fit-content;
+            gap: 0.1rem;
+        }
+    }
+}

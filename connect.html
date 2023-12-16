@@ -15,41 +15,94 @@
     </head>
     <body>
         <main>
-            <!-- navbar -->
-            <section class="navbar__section">
-                <div class="logo__container">
-                    <img src="./assets/logo.svg" alt="logo" />
-                    <p>
-                        ANTIOCH BAPTIST <br />
-                        CHURCH, <span>OGBOMOSO</span>
-                    </p>
-                </div>
-                <div class="navbar__container">
-                    <!-- <button id="hamburger-button" class="hamburger__btn">&#9776</button> -->
-                    <nav class="navbar">
-                        <div class="list__container">
-                            <a href="./index.html">HOME</a>
-                            <a href="./about.html">ABOUT</a>
-                            <a href="./sermon.html">SERMONS</a>
-                            <a href="./give.html">GIVE</a>
-                            <a href="./connect.html">CONNECT</a>
-                            <a href="./visit.html">VISIT</a>
-                        </div>
+            <section class="connect__page">
+                <!-- navbar -->
+                <section class="navbar__section">
+                    <div class="logo__container">
+                        <img src="./assets/logo.svg" alt="logo" />
+                        <p>
+                            ANTIOCH BAPTIST <br />
+                            CHURCH, <span>OGBOMOSO</span>
+                        </p>
+                    </div>
+                    <div class="navbar__container">
+                        <button id="hamburger-button" class="hamburger__btn">&#9776</button>
+                        <nav class="navbar">
+                            <div class="list__container">
+                                <a href="./index.html">HOME</a>
+                                <a href="./about.html">ABOUT</a>
+                                <a href="./sermon.html">SERMONS</a>
+                                <a href="./give.html">GIVE</a>
+                                <a href="./connect.html">CONNECT</a>
+                                <a href="./visit.html">VISIT</a>
+                            </div>
+                        </nav>
+                    </div>
+                </section>
+
+                <section id="mobile-menu" class="mobile__navbar__cont">
+                    <h2>&times;</h2>
+                    <nav class="mobile__navbar">
+                        <a href="./index.html">HOME</a>
+                        <a href="./about.html">ABOUT</a>
+                        <a href="./sermon.html">SERMONS</a>
+                        <a href="./give.html">GIVE</a>
+                        <a href="./connect.html">CONNECT</a>
+                        <a href="./visit.html">VISIT</a>
                     </nav>
-                </div>
+                </section>
+
+                <section class="connect">
+                    <h1>CONNECT WITH US</h1>
+                </section>
             </section>
 
-            <section id="mobile-menu" class="mobile__navbar__cont">
-                <h2>&times;</h2>
-                <nav class="mobile__navbar">
-                    <a href="./index.html">HOME</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./sermon.html">SERMONS</a>
-                    <a href="./give.html">GIVE</a>
-                    <a href="./connect.html">CONNECT</a>
-                    <a href="./visit.html">VISIT</a>
-                </nav>
+            <section class="service">
+                <h1>Sunday Services</h1>
+                <div class="service__details">
+                    <div class="church1">
+                        <img src="./assets/church1.svg" alt="church" />
+                        <div class="church1__text">
+                            <h2>1ST MORNING WORSHIP</h2>
+                            <p>
+                                <span
+                                    ><img
+                                        src="./assets/time.svg"
+                                        alt="time" /></span
+                                >8:00 AM
+                            </p>
+                            <p>
+                                <span
+                                    ><img
+                                        src="./assets/location.svg"
+                                        alt="location" /></span
+                                >AUDITORIUM
+                            </p>
+                        </div>
+                    </div>
+                    <div class="church2">
+                        <img src="./assets/church2.svg" alt="church" />
+                        <div class="church2__text">
+                            <h2>2ND MORNING WORSHIP</h2>
+                            <p>
+                                <span
+                                    ><img
+                                        src="./assets/time.svg"
+                                        alt="time" /></span
+                                >10:00 AM
+                            </p>
+                            <p>
+                                <span
+                                    ><img
+                                        src="./assets/location.svg"
+                                        alt="location" /></span
+                                >AUDITORIUM
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
+            <script src="./app.js"></script>
         </main>
     </body>
 </html>
