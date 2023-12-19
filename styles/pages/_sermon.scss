@@ -2,7 +2,6 @@
     background-image: url(../../assets/SERMON.png);
     background-position: center;
     min-height: 100vh;
-    padding: 0.7rem;
     .preach {
         display: flex;
         flex-direction: column;
@@ -11,6 +10,7 @@
         min-height: 65vh;
         text-align: center;
         justify-content: space-between;
+        padding: 0.7rem;
 
         .text {
             display: flex;

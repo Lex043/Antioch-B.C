@@ -2,10 +2,6 @@
     background-image: url(../../assets/GIVE\ PG\ 1.png);
     background-position: center;
     min-height: 100vh;
-    padding: 0.7rem;
-    // @include media(">=tablet") {
-    //     padding: 0 2rem 1rem;
-    // }
 
     .preloader {
         display: none;
@@ -13,6 +9,7 @@
         min-height: 65vh;
         justify-content: space-between;
         margin-top: 8rem;
+        padding: 0.7rem;
         @include media(">=tablet") {
             width: 80%;
             margin: 8rem auto 0rem;
@@ -34,6 +31,7 @@
         flex-direction: column;
         margin-top: 3rem;
         justify-content: space-between;
+        padding: 0.7rem;
         @include media(">=tablet") {
             width: 80%;
             margin: 8rem auto 0rem;
