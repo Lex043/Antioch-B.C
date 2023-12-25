@@ -13,53 +13,54 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <main class="homepage">
-            <!-- navbar -->
-            <section class="navbar__section">
-                <div class="logo__container">
-                    <a href="./index.html"> <img src="./assets/logo.svg" alt="logo" /></a>
-                    <p>
-                        ANTIOCH BAPTIST <br />
-                        CHURCH, <span>OGBOMOSO</span>
-                    </p>
-                </div>
-                <div class="navbar__container">
-                    <button id="hamburger-button" class="hamburger__btn">&#9776</button>
-                    <nav class="navbar">
-                        <div class="list__container">
-                            <a href="./index.html">HOME</a>
-                            <a href="./about.html">ABOUT</a>
-                            <a href="./sermon.html">SERMONS</a>
-                            <a href="./give.html">GIVE</a>
-                            <a href="./connect.html">CONNECT</a>
-                            <a href="./visit.html">VISIT</a>
-                        </div>
-                    </nav>
-                </div>
-            </section>
-
-            <section id="mobile-menu" class="mobile__navbar__cont">
-                <h2>&times;</h2>
-                <nav class="mobile__navbar">
-                    <a href="./index.html">HOME</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./sermon.html">SERMONS</a>
-                    <a href="./give.html">GIVE</a>
-                    <a href="./connect.html">CONNECT</a>
-                    <a href="./visit.html">VISIT</a>
-                </nav>
-            </section>
-
-            <header class="hero">
-                <h1>WELCOME HOME</h1>
+    <body class="homepage" data-barba="wrapper">
+        <!-- navbar -->
+        <section class="navbar__section">
+            <div class="logo__container">
+                <a href="./index.html">
+                    <img src="./assets/logo.svg" alt="logo"
+                /></a>
                 <p>
-                    MOULDING LIVES, AFTER <br />
-                    CHRIST.
+                    ANTIOCH BAPTIST <br />
+                    CHURCH, <span>OGBOMOSO</span>
                 </p>
-                <button>LISTEN TO A SERMON</button>
-            </header>
-            <script src="./app.js"></script>
-        </main>
+            </div>
+            <div class="navbar__container">
+                <button id="hamburger-button" class="hamburger__btn">&#9776</button>
+                <nav class="navbar">
+                    <div class="list__container">
+                        <a href="./index.html">HOME</a>
+                        <a href="./about.html">ABOUT</a>
+                        <a href="./sermon.html">SERMONS</a>
+                        <a href="./give.html">GIVE</a>
+                        <a href="./connect.html">CONNECT</a>
+                        <a href="./visit.html">VISIT</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobile-menu" class="mobile__navbar__cont">
+            <h2>&times;</h2>
+            <nav class="mobile__navbar">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./sermon.html">SERMONS</a>
+                <a href="./give.html">GIVE</a>
+                <a href="./connect.html">CONNECT</a>
+                <a href="./visit.html">VISIT</a>
+            </nav>
+        </section>
+
+        <header data-barba="container" data-barba-namespace="home" class="hero">
+            <h1>WELCOME HOME</h1>
+            <p>
+                MOULDING LIVES, AFTER <br />
+                CHRIST.
+            </p>
+            <button>LISTEN TO A SERMON</button>
+        </header>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script defer src="./app.js"></script>
     </body>
 </html>

@@ -13,57 +13,60 @@
             rel="stylesheet"
         />
     </head>
-    <body>
-        <main class="sermon__page">
-            <!-- navbar -->
-            <section class="navbar__section">
-                <div class="logo__container">
-                    <a href="./index.html"> <img src="./assets/logo.svg" alt="logo" /></a>
-                    <p>
-                        ANTIOCH BAPTIST <br />
-                        CHURCH, <span>OGBOMOSO</span>
-                    </p>
-                </div>
-                <div class="navbar__container">
-                    <button id="hamburger-button" class="hamburger__btn">&#9776</button>
-                    <nav class="navbar">
-                        <div class="list__container">
-                            <a href="./index.html">HOME</a>
-                            <a href="./about.html">ABOUT</a>
-                            <a href="./sermon.html">SERMONS</a>
-                            <a href="./give.html">GIVE</a>
-                            <a href="./connect.html">CONNECT</a>
-                            <a href="./visit.html">VISIT</a>
-                        </div>
-                    </nav>
-                </div>
-            </section>
-
-            <section id="mobile-menu" class="mobile__navbar__cont">
-                <h2>&times;</h2>
-                <nav class="mobile__navbar">
-                    <a href="./index.html">HOME</a>
-                    <a href="./about.html">ABOUT</a>
-                    <a href="./sermon.html">SERMONS</a>
-                    <a href="./give.html">GIVE</a>
-                    <a href="./connect.html">CONNECT</a>
-                    <a href="./visit.html">VISIT</a>
-                </nav>
-            </section>
-
-            <section class="preach">
-                <header class="text">
-                    <div class="text__container">
-                        <h1>PREACHING THE WORD</h1>
-                        <p>Renew your mind. Inspire your heart.</p>
-                    </div>
-                    <button>LISTEN TO A SERMON</button>
-                </header>
+    <body class="sermon__page" data-barba="wrapper">
+        <!-- navbar -->
+        <section class="navbar__section">
+            <div class="logo__container">
+                <a href="./index.html">
+                    <img src="./assets/logo.svg" alt="logo"
+                /></a>
                 <p>
-                    ALSO AVAILABLE ON MIXLR APP, YOUTUBE, FACEBOOK AND TWITTER
+                    ANTIOCH BAPTIST <br />
+                    CHURCH, <span>OGBOMOSO</span>
                 </p>
-            </section>
-            <script src="./app.js"></script>
-        </main>
+            </div>
+            <div class="navbar__container">
+                <button id="hamburger-button" class="hamburger__btn">&#9776</button>
+                <nav class="navbar">
+                    <div class="list__container">
+                        <a href="./index.html">HOME</a>
+                        <a href="./about.html">ABOUT</a>
+                        <a href="./sermon.html">SERMONS</a>
+                        <a href="./give.html">GIVE</a>
+                        <a href="./connect.html">CONNECT</a>
+                        <a href="./visit.html">VISIT</a>
+                    </div>
+                </nav>
+            </div>
+        </section>
+
+        <section id="mobile-menu" class="mobile__navbar__cont">
+            <h2>&times;</h2>
+            <nav class="mobile__navbar">
+                <a href="./index.html">HOME</a>
+                <a href="./about.html">ABOUT</a>
+                <a href="./sermon.html">SERMONS</a>
+                <a href="./give.html">GIVE</a>
+                <a href="./connect.html">CONNECT</a>
+                <a href="./visit.html">VISIT</a>
+            </nav>
+        </section>
+
+        <section
+            data-barba="container"
+            data-barba-namespace="sermon"
+            class="preach"
+        >
+            <header class="text">
+                <div class="text__container">
+                    <h1>PREACHING THE WORD</h1>
+                    <p>Renew your mind. Inspire your heart.</p>
+                </div>
+                <button>LISTEN TO A SERMON</button>
+            </header>
+            <p>ALSO AVAILABLE ON MIXLR APP, YOUTUBE, FACEBOOK AND TWITTER</p>
+        </section>
+        <script src="https://unpkg.com/@barba/core"></script>
+        <script defer src="./app.js"></script>
     </body>
 </html>
